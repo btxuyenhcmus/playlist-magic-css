@@ -49,7 +49,7 @@ body
     z-index: 1;
 }
 
-.navigation ul li a
+.navigation ul li .menu-item
 {
     position: relative;
     display: flex;
@@ -59,9 +59,10 @@ body
     width: 100%;
     text-align: center;
     font-weight: 500;
+    cursor: pointer;
 }
 
-.navigation ul li a .icon
+.navigation ul li .menu-item .icon
 {
     position: relative;
     display: block;
@@ -72,12 +73,12 @@ body
     color: var(--clr);
 }
 
-.navigation ul li.active a .icon
+.navigation ul li.active .menu-item .icon
 {
     transform: translateY(-32px);
 }
 
-.navigation ul li a .text
+.navigation ul li .menu-item .text
 {
     position: absolute;
     color: var(--clr);
@@ -89,7 +90,7 @@ body
     transform: translateY(20px);
 }
 
-.navigation ul li.active a .text
+.navigation ul li.active .menu-item .text
 {
     opacity: 1;
     transform: translateY(10px);
